@@ -1,0 +1,48 @@
+.box {
+	height: 50px;
+	width: 100%;
+	background-color: forestgreen;
+	border: 10px solid black;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 100%;
+	height: 200px;
+	background-color: yellow;
+}
+
+.inner {
+	width: calc(100%/3);
+	height: 100%;
+	background-color: blue;
+	float: left;
+	border: 10px solid red;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+.inner:first-child {
+	background-color: black;
+}
+
+.inner:nth-child(2) {
+	background-color: white;
+}
+
+/*.inner:nth-child(3n +3);  this reads as select every
+third element starting on the 3rd one. */
+
+.inner:hover {
+	background-color: gray;
+}
+
+.psuedo-stuff {
+	box-sizing: border-box;
+}
+
+.pseudo-stuff:: after {
+	content: "\"",  - said no one eber;
+	float: left;
+}
